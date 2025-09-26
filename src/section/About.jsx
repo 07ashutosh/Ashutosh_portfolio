@@ -3,6 +3,7 @@ import { Frameworks } from "../component/Frameworks";
 import Card from "../component/Card";
 import { Globe } from "../component/Globe";
 import CopyEmailButton from "../component/CopyEmailButton";
+import DownloadResume from "../component/DownloadResume";    
 
 const About = () => {
   const grid2Container = useRef();
@@ -95,6 +96,7 @@ const About = () => {
               Do you want to start a project together?
             </p>
            <CopyEmailButton/>
+           <DownloadResume/> 
           </div>
         </div>
         {/* Grid 5 */}
@@ -102,7 +104,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools taht
+              I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications
             </p>
           </div>
