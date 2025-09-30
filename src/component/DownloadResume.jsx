@@ -39,7 +39,7 @@ const DownloadResume = () => {
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
             <img
-              src="assets/downloadbutton.svg"
+              src="assets/download.svd"
               alt="download done icon"
               className="w-5"
             />
@@ -55,7 +55,7 @@ const DownloadResume = () => {
             transition={{ duration: 0.1 }}
           >
             <img
-              src="assets/downloadbutton.svg"
+              src="assets/download.svg"
               alt="download icon"
               className="w-5"
             />
