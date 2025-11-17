@@ -100,11 +100,11 @@ const About = () => {
           </div>
         </div>
         {/* Grid 5 */}
-        <div className="grid-default- color grid-5">
+        <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools that
+              I specialize in a variety of languages, frameworks, and tools taht
               allow me to build robust and scalable applications
             </p>
           </div>

@@ -1,41 +1,44 @@
-import { OrbitingCircles } from "./OrbitingCircles"
+import { OrbitingCircles } from "./OrbitingCircles";
 
 export function Frameworks() {
-    const skills =[
-        "css3",
-        "git",
-        "html5",
-        "javascript",
-        "react",
-        "tailwindcss",
-        "node",
-        "mongodb",
-        "sql",
-        "vite.js",
-        "express",
-        "python",
-        "c/c++",
-        "r",
-        "dotnet"
-    ];
+  const skills = [
+    "visualstudiocode",
+    "css3",
+    "javascript",
+    "dotnet",
+    "git",
+    "github",
+    "html5",
+    "java",
+    "mongodb",
+    "express",
+    "tailwindcss",
+    "vitejs",
+    "react",
+    "node",
+    "typescript",
+    // "redux",
+    "python",
+    "r",
+  ]; 
+
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-      <OrbitingCircles iconSize={40}>
-        {skills.map((skill, index) =>(
-            <Icon key={index} src = {"assets/logos/${skill}"}/>
+    <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
+      <OrbitingCircles iconSize={35}>
+        {skills.map((skill, index) => (
+          <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
-       {skills.map((skill, index) =>(
-            <Icon key={index} src = {"assets/logos/${skill}.svg"}/>
+
+      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
+        {skills.map((skill, index) => (
+          <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
     </div>
-  )
+  );
 }
 
- const Icon = ({ src })=>{
-    <img src={src} className = "duration-200 rounded-sm hover:scale-110" />
- }
-
-
+const Icon = ({ src }) => (
+  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+);

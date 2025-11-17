@@ -14,7 +14,7 @@ export function OrbitingCircles({
   iconSize = 30,
   speed = 1,
   ...props
-} ) {
+}) {
   const calculatedDuration = duration / speed
   return (
     <>
@@ -37,17 +37,16 @@ export function OrbitingCircles({
         const angle = (360 / React.Children.count(children)) * index
         return (
           <div
-            style={
-              {
-                "--duration": calculatedDuration,
-                "--radius": radius,
-                "--angle": angle,
-                "--icon-size": `${iconSize}px`,
-              } 
-            }
+            style={{
+              "--duration": calculatedDuration,
+              "--radius": radius,
+              "--angle": angle,
+              "--icon-size": `${iconSize}px`,
+              animationDirection: reverse ? "reverse" : "normal",
+            }}
             className={twMerge(
-              `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu items-center justify-center rounded-full`,
-              { "[animation-direction:reverse]": reverse },
+              `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu 
+     items-center justify-center rounded-full`,
               className
             )}
             {...props}
